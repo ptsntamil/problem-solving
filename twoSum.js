@@ -30,7 +30,7 @@ tar = 16;
 function twoSumUnOrdered(arr, target) {
   let temp = {};
   
-  for(i=0;i<arr.length; i++) {
+  for (i=0;i<arr.length; i++) {
     let rem = target - arr[i];
     if (temp[rem]) {
       console.log(arr[i], rem) // 9,7 , 21,1 , 17,10
@@ -39,7 +39,7 @@ function twoSumUnOrdered(arr, target) {
       temp[arr[i]] = rem;  
     } 
   }
-  console.log(-1,-1)
+  console.log(-1,-1);
   return false
 } 
 
